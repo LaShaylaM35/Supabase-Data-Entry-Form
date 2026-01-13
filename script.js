@@ -14,11 +14,12 @@ async function createLead(){
     let email = document.getElementById("contactEmail").value;
     let message = document.getElementById("contactMessage").value;
 
+    
+
     let lead = {
-         
-        "email" : email,
-        "message" : message
-    }
+        email,
+        message
+    };
 
  
     let response = await fetch(url , {
