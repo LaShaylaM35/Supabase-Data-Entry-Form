@@ -31,8 +31,7 @@ async function createLead(){
         body : JSON.stringify(lead)
     })
 
-    let data = await response.json();
-    console.log(data);
+    
 
     console.log("Successful Submission");
     console.log(lead);
