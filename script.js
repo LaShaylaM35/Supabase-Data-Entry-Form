@@ -31,7 +31,11 @@ async function createLead(){
         body : JSON.stringify(lead)
     })
 
-    
+    let result = document.getElementById("result");
+    result.textContent = "Lead created successfully!";
+
+    document.getElementById("contactEmail").value = "";
+    document.getElementById("contactMessage").value = "";
 
     console.log("Successful Submission");
     console.log(lead);
